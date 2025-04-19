@@ -34,6 +34,12 @@ A simple Node.js API built with TypeScript and Express.
 
 5. The server will run at `http://localhost:8080`.
 
+### Scripts
+
+- `npm run dev`: Starts the server in development mode with hot-reloading.
+- `npm run build`: Compiles the TypeScript code to JavaScript.
+- `npm start`: Starts the server in production mode.
+
 
 ## Example Routes
 
@@ -48,13 +54,16 @@ POST:
 http://localhost:3000/api/example
 ```
 
-## Scripts
+## Docker
 
-- `npm run dev`: Starts the server in development mode with hot-reloading.
-- `npm run build`: Compiles the TypeScript code to JavaScript.
-- `npm start`: Starts the server in production mode.
+```sh
+docker build -t image-name .
+```
+
+```sh
+docker run -d -p 8080:8080 --env-file .env image-name
+```
 
 ## License
 
 This project is licensed under the MIT License.
-
